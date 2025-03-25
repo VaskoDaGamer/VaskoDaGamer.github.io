@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNLV Accreditation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .logo {
+            width: 800px;
+            margin-bottom: 20px;
+        }
+        .dropdown {
+            background-color: #ba0c2f;
+            color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: left;
+            font-size: 18px;
+        }
+        .dropdown:hover {
+            background-color: #8d0a24;
+        }
+        .dropdown-content {
+            display: none;
+            padding: 10px 20px;
+            background-color: #d1d3d4;
+            border-radius: 0 0 5px 5px;
+        }
+        .dropdown-content a {
+            display: block;
+            color: #ba0c2f;
+            text-decoration: none;
+            padding: 5px 0;
+        }
+        .dropdown-content a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="unlv-logo.png" alt="UNLV Logo" class="logo">
+        <h1>UNLV Accreditation Resources</h1>
+        
+        <div class="dropdown">Course Portfolios</div>
+        <div class="dropdown-content">
+		
+			<a href="coursePortfoliosFall2024.html">Fall 2024
+			</a>
+		
+			<a href="coursePortfoliosSpring2024.html">Spring 2024
+			</a>
+		
+			<a href="coursePortfoliosFall2023.html">Fall 2023
+			</a>
+		
+			<a href="coursePortfoliosSpring2023.html">Spring 2023
+			</a>
+		
+			<a href="coursePortfoliosFall2022.html">Fall 2022
+			</a>
+		
+			<a href="coursePortfoliosSpring2022.html">Spring 2022
+			</a>
+		
+			<a href="coursePortfoliosFall2021.html">Fall 2021
+			</a>
+		
+			<a href="coursePortfoliosSpring2021.html">Spring 2021</a>
+		
+			<a href="coursePortfoliosFall2020.html">Fall 2020
+			</a>
+		
+            <a href="coursePortfoliosSpring2020.html">Spring 2020</a>
+				
+        </div>
+        
+        <div class="dropdown">Self-Study Report</div>
+        <div class="dropdown-content">
+            <a href="https://www.dropbox.com/link4">Criterion 1</a>
+            <a href="https://www.dropbox.com/link5">and so forth..</a>
+        </div>
+        
+        <div class="dropdown">Materials</div>
+        <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/1u78OBLktWHv6iZkzwLjYO6AcoZGzjzij?usp=drive_link">Raw Data Collection</a>
+			
+            <a href="FacultyMeetingMinutes.html">Faculty/Assessment Commitee Meeting Minutes</a>
+            <a href="AdvisoryBoardMeetingMinutes.html">Advisory Board Meeting Minutes</a>
+            <a href="SemesterlyReportsRecommendations.html">Semesterly Reports and Recommendations</a>
+			<a href = "">Manuals </a>
+        </div>
+		
+		
+    </div>
+    
+    <script>
+        const dropdowns = document.querySelectorAll('.dropdown');
+        
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('click', () => {
+                const content = dropdown.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
